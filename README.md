@@ -13,96 +13,19 @@ Tugas : Buatlah Method Program java Toast Number, dengan menghasilkan Bilangan F
 # Layout
 Pada layout ini, saya membuat tiga button dan satu textview :
 
-button_limit, berfungsi sebagai tombol “Set Limit” yang nantinya ketika di tekan akan muncul sebuah pop-up untuk masukan limit angka yang ingin kita hitung.
+button_limit, berfungsi sebagai tombol “Set Limit” yang nantinya ketika di tekan akan muncul sebuah pop-up untuk masukan limit angka yang ingin 
+kita hitung.
+
 button_count, berfungsi sebagai tombol “count” yang nantinya ketika tombol ditekan akan menghitung bilangan fibonaccinya sesuai dengan yang kita limit. Juga berbeda warna pada setiap angka, agar tidak keliru.
+
 button_back, berfungsi sebagai tombol restart yang nantinya angka akan kembali ke awal.
+
 Textview show_count, yang berfungsi untuk menampilkan angka atau bilangan fibonaccinya yang tepat berada di tengah.
 Berikut adalah coding pada menu layout :
 
 # activity_main.xml
 
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/numberMax"
-        android:layout_width="199dp"
-        android:layout_height="55dp"
-        android:background="@color/colorPrimary"
-        android:onClick="numberMax"
-        android:text="NumMax"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="199dp"
-        android:layout_height="55dp"
-        android:background="@color/colorPrimary"
-        android:onClick="CountUP"
-        android:text="Count"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <TextView
-        android:id="@+id/show_count"
-        android:layout_width="407dp"
-        android:layout_height="626dp"
-        android:background="@color/yellow"
-        android:gravity="center_vertical"
-        android:text="0"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="160dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/numberMax"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore=",Rtlcompat"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="210dp"
-        android:layout_height="56dp"
-        android:background="@color/colorPrimary"
-        android:onClick="Reset"
-        android:text="Back"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/show_count"
-        app:layout_constraintVertical_bias="0.0"/>
-
-    <EditText
-        android:layout_width="207dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:hint="Nama"
-        android:paddingStart="12dp"
-        android:textSize="15sp"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="-1dp"
-        tools:ignore="ExtraText,MissingConstraints" />
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+![gambar]<https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/gambar/ss1.png>
 
 # Strings.xml
 
