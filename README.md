@@ -1,8 +1,13 @@
 Nama    : Robby firmansyah
+
 NIM     : 312210643
+
 Kelas   : TI.22.A5
+
 Mata Kuliah    : Pemrograman Mobile 1
+
 Dosen Pengampu : Donny Maulana, S.Kom.,M.M.S.I.
+
 Tugas          : Buatlah Method Program java Toast Number, dengan menghasilkan Bilangan Fibonacci
 
 # Layout
@@ -49,3 +54,5 @@ Pada Java class MainActivity.java berisi semua coding untuk menjalankan aplikasi
 ![gambar](https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/gambar/design.png)
 
 # Hasil
+
+![video]()
