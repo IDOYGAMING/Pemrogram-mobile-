@@ -55,7 +55,9 @@ Pada Java class MainActivity.java berisi semua coding untuk menjalankan aplikasi
 
 # Hasil
 
-<video controls width="300">
-  <source src="https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/video/hasil.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+klik:
+(view raw)
+
+maaf pak susah :v
+
+# TERIMA KASIH
