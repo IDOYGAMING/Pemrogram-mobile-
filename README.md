@@ -55,4 +55,4 @@ Pada Java class MainActivity.java berisi semua coding untuk menjalankan aplikasi
 
 # Hasil
 
-![video]()
+![video](https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/video/hasil.mp4)
