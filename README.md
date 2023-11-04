@@ -10,7 +10,7 @@ Buatlah Method Program java Toast Number, dengan Menghasilkan Bilangan Fibonacci
 
 Layout
 
-    Pada layout ini, saya membuat tiga button dan satu textview :
+Pada layout ini, saya membuat tiga button dan satu textview :
 
 1. button_limit, berfungsi sebagai tombol “Set Limit” yang nantinya ketika di tekan akan muncul sebuah pop-up untuk masukan limit angka yang ingin kita hitung.
 2. button_count, berfungsi sebagai tombol “count” yang nantinya ketika tombol ditekan akan menghitung bilangan fibonaccinya sesuai dengan yang kita limit. Juga berbeda warna pada setiap angka, agar tidak keliru.
@@ -30,7 +30,7 @@ Berikut coding pada menu layout :
     tools:context=".MainActivity">
 
 
-    <Button
+<Button
         android:id="@+id/numberMax"
         android:layout_width="199dp"
         android:layout_height="55dp"
@@ -40,7 +40,7 @@ Berikut coding pada menu layout :
         android:textColor="@color/white"
         tools:ignore="MissingConstraints" />
 
-    <Button
+<Button
         android:id="@+id/button2"
         android:layout_width="199dp"
         android:layout_height="55dp"
@@ -53,7 +53,7 @@ Berikut coding pada menu layout :
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <TextView
+<TextView
         android:id="@+id/show_count"
         android:layout_width="407dp"
         android:layout_height="626dp"
@@ -72,7 +72,7 @@ Berikut coding pada menu layout :
         app:layout_constraintVertical_bias="1.0"
         tools:ignore=",Rtlcompat"/>
 
-    <Button
+<Button
         android:id="@+id/button3"
         android:layout_width="210dp"
         android:layout_height="56dp"
@@ -87,7 +87,7 @@ Berikut coding pada menu layout :
         app:layout_constraintTop_toBottomOf="@id/show_count"
         app:layout_constraintVertical_bias="0.0"/>
 
-    <EditText
+<EditText
         android:layout_width="207dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
@@ -149,44 +149,44 @@ public class MainActivity extends AppCompatActivity {
     private TextView showCount;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
 
-        showCount = findViewById(R.id.show_count);
+showCount = findViewById(R.id.show_count);
     }
 
-    public void showToast(View view) {
+public void showToast(View view) {
         Toast toast = Toast.makeText(this, "Welcome Toast!", Toast.LENGTH_SHORT);
         toast.show();
     }
 
-    @SuppressLint("SetTextI18n")
+@SuppressLint("SetTextI18n")
     public void CountUP(View view) {
         if (count < 0) {
             count = 0;
         }
 
-        int result = generateFibonacci(count);
+int result = generateFibonacci(count);
 
-        if (result <= 1000) {
+if (result <= 1000) {
             showCount.setText(Integer.toString(result));
             count++;
         }
     }
 
 
-    private int generateFibonacci(int n) {
+private int generateFibonacci(int n) {
         if (n <= 0) {
             return 0;
         } else if (n == 1) {
             return 1;
         }
 
-        int first = 0;
-        int second = 1;
-        for (int i = 2; i <= n;  i++) {
+int first = 0;
+int second = 1;
+for (int i = 2; i <= n;  i++) {
             int next = first + second;
             first = second;
             second = next;
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         return first;
 
     }
-    public void Reset(View view) {
+public void Reset(View view) {
         count = 1;
         showCount.setText("0");
     }
