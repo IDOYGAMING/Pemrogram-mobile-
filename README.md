@@ -25,7 +25,7 @@ Berikut adalah coding pada menu layout :
 
 # activity_main.xml
 
-![gambar]<https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/gambar/ss1.png>
+![gambar](https://github.com/IDOYGAMING/Pemrogram-mobile-/blob/main/gambar/ss1.png)
 
 # Strings.xml
 
